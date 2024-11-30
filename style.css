@@ -14,25 +14,44 @@ body{
     margin: 0;
 }
 .container{
-    margin: 100px 200px;
+    margin: -20px 200px 100px 200px;
     height: auto;
     width: auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
     
 
 }
-img{
-    display: inline;
-}
-
-.close{
-    display: none;
-}
-
-.question p{
+.open {
     display: inline-block;
-    padding: 20px;
-    margin-right: 100px;
+    margin-left: 300px;
+    align-self: right;
 }
+
+.close, .answer{
+    display: none;
+    position: absolute;
+
+}
+
+.question {
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.show{
+    display: block;
+}
+
